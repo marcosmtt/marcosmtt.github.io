@@ -153,6 +153,7 @@ a:hover {
 	padding: 1em 6em;
 	margin: 15px 20px;
 	transition: all 0.3s;
+	cursor: pointer;
 }
 
 .hero-content .buttons button:hover {
