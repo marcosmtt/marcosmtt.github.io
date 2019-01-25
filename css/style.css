@@ -15,23 +15,27 @@ a:hover {
 }
 
 .header {
-	background: rgba(17,20,31, 0.9);
+	background: rgba(17, 20, 31, 0.97);
 	width: 100%;
 	position: asolute;
 	top: 0;
-    left: 0;
+	left: 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
-    padding: 15px 50px;
-    z-index: 999;
-    position: absolute;
+	padding: 15px 50px;
+	z-index: 999;
+	position: absolute;
 }
-
 
 .header #rumbleLogo {
 	width: 150px;
-	margin-right: 10px;
+	opacity: .7;
+	transition: all 0.2s;
+}
+
+.header #rumbleLogo:hover {
+	opacity: 1;
 }
 
 .header input {
@@ -58,32 +62,100 @@ a:hover {
 	color: white;
 	font-weight: 300;
 	opacity: .6;
+	transition: all 0.3s;
 }
+
 .header li a {
+	cursor: pointer;
+	text-decoration: none;
 	color: white;
+	transition: all 0.5s;
 }
+
+.header li:hover {
+	color: white;
+	opacity: .9;
+}
+
 .header li:first-child {
+	font-weight: bold;
+	opacity: .9;
 	margin-left: 0;
 }
 
 .header .btnEntrar {
 	background-color: #2e3447;
-    border-radius: 4px;
-    border: 2px solid transparent;
+	border-radius: 4px;
+	border: 2px solid transparent;
 	color: white;
-    padding: 12px 32px;
-    transition: all 0.3s;
+	padding: 12px 32px;
+	transition: all 0.3s;
 }
 
 .header .btnEntrar:hover {
-    background-color: transparent;
-    border-color: white;
+	background-color: transparent;
+	border-color: white;
 }
 
 .hero {
-    background-image: url(../images/vaynebg.jpg);
-    background-size: 100%;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
+	background-image: url(../images/vaynebg.jpg);
+	background-size: 100%;
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero .hero-content {
+	max-width: 50em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero .hero-content h2 {
+	color: rgb(207, 57, 109);
+	font-size: 2em;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+
+.hero h1 {
+	color: white;
+	font-size: 3.5rem;
+	text-align: center;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.hero .hero-content p {
+	color: white;
+	opacity: .7;
+}
+
+.hero .hero-content .buttons {
+	
+	padding: 3em;
+}
+
+.hero-content .buttons h3 {
+	text-align: center;
+	font-weight: lighter;
+	color: white;
+}
+
+.hero-content .buttons button {
+	background-color: #B32658;
+	border-radius: 5em;
+	border: 2px solid transparent;
+	color: white;
+	padding: 1em 6em;
+	margin: 15px 20px;
+	transition: all 0.3s;
+}
+
+.hero-content .buttons button:hover {
+	background-color: transparent;
+	border-color: white;
 }
